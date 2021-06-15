@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN " 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd " > 
+<tiles-definitions> 
+
+<definition name = "web.user" template = "/views/layouts/user/layout.jsp"> 
+     <put-attribute name = "header" value = "/views/layouts/user/header.jsp"/> 
+     <put-attribute name = "menu"   value = "/views/layouts/user/menu.jsp"/>
+     <put-attribute name = "content" value = ""/> 
+     <put-attribute name = "footer" value = "/views/layouts/user/footer.jsp"/> 
+</definition > 
+<definition name="*/*" extends = "web.user" > 
+<put-attribute name="content" value="/views/user/{2}.jsp"/> 
+</definition > 
+
+
+<definition name = "web.admin" template = "/views/layouts/admin/layout.jsp"> 
+     <put-attribute name = "header" value = "/views/layouts/admin/header.jsp"/> 
+     <put-attribute name = "menu"   value = "/views/layouts/admin/menu.jsp"/>
+     <put-attribute name = "content" value = ""/> 
+     <put-attribute name = "footer" value = "/views/layouts/admin/footer.jsp"/> 
+</definition> 
+<definition name="*/*/*" extends = "web.admin" > 
+<put-attribute name="content" value="/views/admin/{2}/{3}.jsp"/> 
+</definition >
+
+
+<definition name = "web.login" template = "/views/layouts/auth/layout.jsp"> 
+     <put-attribute name = "content" value = ""/> 
+</definition > 
+
+<definition name="auth/login" extends="web.login"> 
+<put-attribute name="content" value="/views/auth/login.jsp"/> 
+</definition >
+
+</tiles-definitions>
