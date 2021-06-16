@@ -1,6 +1,5 @@
 package com.shop.entity;
 
-import java.sql.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -33,7 +32,7 @@ public class Order {
 	private Integer id;
 	
 	@Column(name = "create_date")
-	private Date create_date;
+	private String create_date;
 	
 	@Column(name = "address")
 	private String address;

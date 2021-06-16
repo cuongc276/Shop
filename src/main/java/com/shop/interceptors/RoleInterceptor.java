@@ -22,8 +22,7 @@ public class RoleInterceptor implements HandlerInterceptor {
     ) throws IOException {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
-        System.out.println("role");
-        if ( user.getAdmin() != 1  ) {
+        if ( user.getAdmin() == 2  ) {
         	response.sendRedirect(request.getContextPath() + "/login");
             return false;
         }

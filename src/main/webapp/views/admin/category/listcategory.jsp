@@ -9,7 +9,6 @@
 <link rel="stylesheet" href=" ${ pageContext.request.contextPath }/css/bootstrap.min.css"></link>
 </head>
 <body>
-	<a href="${ pageContext.request.contextPath }/admin/category/show">Show</a>
 	<div class="mt-5 col-10 offset-1">
         <div class="">
             <a
