@@ -13,7 +13,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </head>
 <body>
-	<a href="${ pageContext.request.contextPath }/admin/product/show">Show</a>
 	<div class="mt-5 col-10 offset-1">
         <div class="">
             <a

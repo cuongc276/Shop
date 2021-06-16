@@ -16,6 +16,7 @@ public class ResourceConfig {
 		ms.addBasenames("classpath:messages/product");
 		ms.addBasenames("classpath:messages/user");
 		ms.addBasenames("classpath:messages/category");
+		ms.addBasenames("classpath:messages/order");
 		ms.setDefaultEncoding("UTF-8");
 		return ms;
 	}

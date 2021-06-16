@@ -18,7 +18,6 @@ public class AuthenticateInterceptor implements HandlerInterceptor {
         HttpServletResponse response,
         Object handler
     ) throws IOException {
-		System.out.println("auth");
         HttpSession session = request.getSession();
         if ( session.getAttribute("user") == null ) {
         	

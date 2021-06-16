@@ -21,18 +21,18 @@
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
         <ul class="navbar-nav">
           <li class="nav-item mr-4">
-	          <a class="nav-link " aria-current="page" href="#">Home</a>
+	          <a class="nav-link " aria-current="page" href="${ pageContext.request.contextPath }/home">Home</a>
 	        </li>
           
           <li class="nav-item mr-4">
-	          <a class="nav-link " aria-current="page" href="#">Cart</a>
+	          <a class="nav-link " aria-current="page" href="${ pageContext.request.contextPath }/user/cart">Cart</a>
 	        </li>
           <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
             <div class="dropdown-menu" aria-labelledby="dropdown08">
               <c:choose>
 	              	<c:when test="${ not empty sessionScope.user }">
-	              		<a class="dropdown-item" href="#">Admin: ${ sessionScope.user.name }</a>
+	              		<a class="dropdown-item" href="#">User: ${ sessionScope.user.name }</a>
 	              		<a class="dropdown-item" href="${ pageContext.request.contextPath }/logout">Logout</a>
 	              	</c:when>
 	              	<c:otherwise>
